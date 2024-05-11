@@ -7,15 +7,13 @@ Here are the implemented features:
 - Can log in to a server (through HTTP or reverse proxy).
 - Ability to show publicly available users
 - Ability to save user credentials.
-- Shows user's categories and media from the selected category.
-- Playback selected content
+- Ability to list categories and media files.
+- Ability to play media files.
 
 
 Planned features:
-
 - Ability to login through API Key
-- Handle navigation better for media with subfolders (i.e. Music/TV Shows)
-- Grab the specific ID of a selected category/media file without user interaction.
+- Grab the specific ID of a media file without user interaction.
 
 
 Please note, this isn't intended to be a fully fledged client. I'm mainly using this to practice web scraping and using APIs.
