@@ -1,19 +1,66 @@
+
 # Deltafin - A Jellyfin CLI Client.
 
-A very basic CLI client for Jellyfin written in Python to playback videos.
-
-Here are the implemented features:
-
-- Can log in to a server (through HTTP or reverse proxy).
-- Ability to show publicly available users
-- Ability to save user credentials.
-- Ability to list categories and media files.
-- Ability to play media files.
+A basic CLI client for Jellyfin written in Python to playback videos.
 
 
-Planned features:
-- Ability to login through API Key
-- Grab the specific ID of a media file without user interaction.
+## Features
+
+- Login to a local/reverse proxy server
+- Automatically logins in to publicly accessable users.
+- Lists avaliable categories
+- Properly navigates Movies, TV Shows and Music.
+- Able to select and playback media.
 
 
-Please note, this isn't intended to be a fully fledged client. I'm mainly using this to practice web scraping and using APIs.
+
+
+## Installation
+
+Clone the repository
+
+```bash
+  git clone https://github.com/kaeini/deltafin
+  cd deltafin
+```
+
+Install requirements.txt
+
+```bash
+  pip install -r requirements.txt
+```
+
+Run the main.py script
+```bash
+  python main.py
+```
+
+
+## Contributing
+
+Contributions are welcomed and encouraged, feel free to open a PR if you have bug fixes or a new feature you'd like to implement!
+
+
+## Roadmap
+
+- Support logging in through API Key
+
+- Find an alternative to using selenium to scrape public users
+
+- Grab the ID of a media file without having to copy paste it.
+
+- Potentially make binaries for Windows/Linux.
+
+- Create skynet.
+
+
+## Acknowledgements
+
+ - This client is powered by [jellyfin-apiclient-python](https://github.com/jellyfin/jellyfin-apiclient-python)
+
+
+
+## License
+
+This project is licensed under the [GPLv3 License](https://choosealicense.com/licenses/gpl-3.0/)
+
