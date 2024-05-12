@@ -47,8 +47,6 @@ Contributions are welcomed and encouraged, feel free to open a PR if you have bu
 
 - Find an alternative to using selenium to scrape public users
 
-- Grab the ID of a media file without having to copy paste it.
-
 - Potentially make binaries for Windows/Linux.
 
 - Create skynet.
