@@ -40,7 +40,7 @@ def login_func(client):
                 # TODO: Find a better way to scrape existing users (this is slow)
                 # Setup BeautifulSoup to scrape the server's login page
                 driver = webdriver.Firefox()
-                driver.get('https://' + server)
+                driver.get('https://' + server + "/web/#/login.html")
                 # Gives 3 attempts to grab the usernames.
                 for i in range(3):
                     try:
