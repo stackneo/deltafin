@@ -63,8 +63,6 @@ def library_func(client):
                     elif category == "music":
                         # Music is handled differently due to album/song structure.
                         # The user must select an album then song to play.
-
-                        # TODO: Figure out why MPV displays nothing when playing music.
                         category = client.jellyfin.user_items(params={'Recursive': False, 'ParentId': category_id})
                         print('Music: ')
                         for i, song in enumerate(category.get('Items', []), start=1):
@@ -85,7 +83,7 @@ def library_func(client):
                         video_num = int(input('Enter the media number: '))
                         video_id = media_dict.get(video_num)
                         # Plays the video in mpv
-                        player = mpv.MPV(input_default_bindings=True, input_vo_keyboard=True, osc=True)
+                        player = mpv.MPV(input_default_bindings=True, input_vo_keyboard=True, osc=True, force_window=True)
                         player.register_key_binding("CLOSE_WIN", "quit")
                         player.fullscreen = True
                         player.play(client.jellyfin.video_url(video_id))
