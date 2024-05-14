@@ -13,6 +13,8 @@ A basic CLI client for Jellyfin written in Python to playback videos.
 - Able to select and playback media.
 
 
+## Prerequisites
+- libmpv.so (needed for the MPV python module).
 
 
 ## Installation
@@ -55,6 +57,7 @@ Contributions are welcomed and encouraged, feel free to open a PR if you have bu
 ## Acknowledgements
 
  - This client is powered by [jellyfin-apiclient-python](https://github.com/jellyfin/jellyfin-apiclient-python)
+ - The CLI interface is powered by [click-shell](https://github.com/clarkperkins/click-shell)
 
 
 
