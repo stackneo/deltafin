@@ -22,7 +22,7 @@ A basic CLI client for Jellyfin written in Python to playback videos.
 Clone the repository
 
 ```bash
-  git clone https://github.com/kaeini/deltafin
+  git clone https://github.com/stackneo/deltafin
   cd deltafin
 ```
 
